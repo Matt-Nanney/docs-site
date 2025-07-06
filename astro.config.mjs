@@ -6,9 +6,17 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Flight Docs',
+			components: {
+				// Override the default SocialIcons component
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
+				{
+					label: 'Instrument',
+					autogenerate: { directory: 'acs'},
+
+				},
 				{
 					label: 'Guides',
 					items: [
