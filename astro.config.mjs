@@ -6,11 +6,14 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Flight Docs',
+			title: 'Matt Nanney CFII',
 			components: {
 				// Override the default SocialIcons component
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [
+				{ icon: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/matt_nanney/'},
+				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/mattnanney'},
+			],
 			sidebar: [
 				{
 					label: 'Instrument',
