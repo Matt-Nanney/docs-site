@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.35.1",
+    "@iconify/json": "^2.2.359",
     "astro": "^5.12.0",
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.2",
+    "starlight-blog": "^0.24.0",
+    "unplugin-icons": "^22.1.0"
   }
 }

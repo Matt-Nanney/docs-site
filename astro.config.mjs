@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import Icons from 'unplugin-icons/vite';
+import starlightBlog from 'starlight-blog';
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +12,9 @@ export default defineConfig({
 			components: {
 				// Override the default SocialIcons component
 			},
+			plugins: [
+				starlightBlog()
+			],
 			social: [
 				{ icon: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/matt_nanney/'},
 				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/mattnanney'},
@@ -34,4 +39,11 @@ export default defineConfig({
 			],
 		}),
 	],
+	vite: {
+		plugins: [
+			Icons({
+				compiler: 'astro',
+			}),
+		],
+	},
 });
