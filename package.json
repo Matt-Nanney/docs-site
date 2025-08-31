@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.35.1",
+    "@astrojs/starlight": "^0.35.2",
     "@iconify/json": "^2.2.359",
-    "astro": "^5.12.0",
+    "astro": "^5.13.3",
     "sharp": "^0.34.2",
     "starlight-blog": "^0.24.0",
     "unplugin-icons": "^22.1.0"
